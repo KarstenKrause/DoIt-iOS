@@ -49,6 +49,8 @@
 		3D23D93F29F0FA2A00486D1B /* DoIt-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DoIt-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D23D94329F0FA2A00486D1B /* DoIt_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoIt_iOSUITests.swift; sourceTree = "<group>"; };
 		3D23D94529F0FA2A00486D1B /* DoIt_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoIt_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D23D95229F0FA4000486D1B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3D23D95329F0FA8C00486D1B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 		3D23D91629F0FA2900486D1B = {
 			isa = PBXGroup;
 			children = (
+				3D23D95329F0FA8C00486D1B /* .gitignore */,
+				3D23D95229F0FA4000486D1B /* README.md */,
 				3D23D92129F0FA2900486D1B /* DoIt-iOS */,
 				3D23D93829F0FA2A00486D1B /* DoIt-iOSTests */,
 				3D23D94229F0FA2A00486D1B /* DoIt-iOSUITests */,
@@ -99,6 +103,8 @@
 		3D23D92129F0FA2900486D1B /* DoIt-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D23D95529F0FE2E00486D1B /* Settings */,
+				3D23D95429F0FE1B00486D1B /* Features */,
 				3D23D92229F0FA2900486D1B /* DoIt_iOSApp.swift */,
 				3D23D92429F0FA2900486D1B /* ContentView.swift */,
 				3D23D92629F0FA2900486D1B /* Assets.xcassets */,
@@ -133,6 +139,20 @@
 				3D23D94529F0FA2A00486D1B /* DoIt_iOSUITestsLaunchTests.swift */,
 			);
 			path = "DoIt-iOSUITests";
+			sourceTree = "<group>";
+		};
+		3D23D95429F0FE1B00486D1B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3D23D95529F0FE2E00486D1B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

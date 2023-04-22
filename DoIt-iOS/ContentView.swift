@@ -9,14 +9,9 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    
-    
     var body: some View {
-        VStack {
-            Text("Do It!")
-        }
+        MainView()
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

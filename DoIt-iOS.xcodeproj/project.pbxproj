@@ -16,6 +16,8 @@
 		3D23D93A29F0FA2A00486D1B /* DoIt_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23D93929F0FA2A00486D1B /* DoIt_iOSTests.swift */; };
 		3D23D94429F0FA2A00486D1B /* DoIt_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23D94329F0FA2A00486D1B /* DoIt_iOSUITests.swift */; };
 		3D23D94629F0FA2A00486D1B /* DoIt_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23D94529F0FA2A00486D1B /* DoIt_iOSUITestsLaunchTests.swift */; };
+		3D23D95E29F495FC00486D1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23D95D29F495FC00486D1B /* MainView.swift */; };
+		3D23D96129F4992300486D1B /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23D96029F4992300486D1B /* AddButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3D23D94529F0FA2A00486D1B /* DoIt_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoIt_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D23D95229F0FA4000486D1B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3D23D95329F0FA8C00486D1B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3D23D95D29F495FC00486D1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3D23D96029F4992300486D1B /* AddButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				3D23D95529F0FE2E00486D1B /* Settings */,
 				3D23D95429F0FE1B00486D1B /* Features */,
+				3D23D95A29F495BF00486D1B /* Main */,
 				3D23D92229F0FA2900486D1B /* DoIt_iOSApp.swift */,
 				3D23D92429F0FA2900486D1B /* ContentView.swift */,
 				3D23D92629F0FA2900486D1B /* Assets.xcassets */,
@@ -144,6 +149,10 @@
 		3D23D95429F0FE1B00486D1B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3D23D95929F23EB400486D1B /* SubTasks */,
+				3D23D95829F23E5200486D1B /* Tasks */,
+				3D23D95729F23E4600486D1B /* Milestones */,
+				3D23D95629F23E2400486D1B /* Projects */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -153,6 +162,51 @@
 			children = (
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		3D23D95629F23E2400486D1B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		3D23D95729F23E4600486D1B /* Milestones */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Milestones;
+			sourceTree = "<group>";
+		};
+		3D23D95829F23E5200486D1B /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		3D23D95929F23EB400486D1B /* SubTasks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubTasks;
+			sourceTree = "<group>";
+		};
+		3D23D95A29F495BF00486D1B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3D23D95F29F4967500486D1B /* Components */,
+				3D23D95D29F495FC00486D1B /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3D23D95F29F4967500486D1B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3D23D96029F4992300486D1B /* AddButtonView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +342,8 @@
 				3D23D92C29F0FA2900486D1B /* Persistence.swift in Sources */,
 				3D23D92529F0FA2900486D1B /* ContentView.swift in Sources */,
 				3D23D92329F0FA2900486D1B /* DoIt_iOSApp.swift in Sources */,
+				3D23D95E29F495FC00486D1B /* MainView.swift in Sources */,
+				3D23D96129F4992300486D1B /* AddButtonView.swift in Sources */,
 				3D23D92F29F0FA2900486D1B /* DoIt_iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

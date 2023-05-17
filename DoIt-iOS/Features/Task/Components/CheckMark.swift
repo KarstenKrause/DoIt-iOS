@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CheckMark: View {
-    @State private var done: Bool = false
+    @State var done: Bool
     
     var body: some View {
         Button(action: {self.done.toggle()}) {
@@ -20,6 +20,6 @@ struct CheckMark: View {
 
 struct CheckMark_Previews: PreviewProvider {
     static var previews: some View {
-        CheckMark()
+        CheckMark(done: false)
     }
 }

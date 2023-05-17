@@ -9,11 +9,22 @@ import SwiftUI
 
 struct TaskView: View {
     @StateObject var taskVM: TaskViewModel
+    @State private var showingSheet: Bool = false
     
     var body: some View {
         HStack {
-            CheckMark()
-            Text("I have to finish this app someday!")
+            CheckMark(done: taskVM.task.done)
+            Text(taskVM.task.description)
+                .onTapGesture {
+                    showingSheet.toggle()
+                }
+                .sheet(isPresented: $showingSheet) {
+                    Text("test sheet")
+                        .presentationDetents([.medium, .large])
+                        .presentationDragIndicator(.visible)
+                }
+                
+            
         }
     }
 }

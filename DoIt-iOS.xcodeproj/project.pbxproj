@@ -20,7 +20,6 @@
 		3D23D96129F4992300486D1B /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23D96029F4992300486D1B /* AddButtonView.swift */; };
 		3DD75B772A09EF4500977DA6 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B762A09EF4500977DA6 /* TaskView.swift */; };
 		3DD75B792A09F75B00977DA6 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B782A09F75B00977DA6 /* TaskModel.swift */; };
-		3DD75B7B2A09F88200977DA6 /* SubTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B7A2A09F88200977DA6 /* SubTaskModel.swift */; };
 		3DD75B7E2A09F9A600977DA6 /* CheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B7D2A09F9A600977DA6 /* CheckMark.swift */; };
 		3DD75B802A09FB5E00977DA6 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B7F2A09FB5E00977DA6 /* TaskViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		3D23D96029F4992300486D1B /* AddButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
 		3DD75B762A09EF4500977DA6 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3DD75B782A09F75B00977DA6 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
-		3DD75B7A2A09F88200977DA6 /* SubTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTaskModel.swift; sourceTree = "<group>"; };
 		3DD75B7D2A09F9A600977DA6 /* CheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMark.swift; sourceTree = "<group>"; };
 		3DD75B7F2A09FB5E00977DA6 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				3D23D95829F23E5200486D1B /* Task */,
-				3D23D95729F23E4600486D1B /* Milestones */,
-				3D23D95629F23E2400486D1B /* Projects */,
+				3D23D95729F23E4600486D1B /* Milestone */,
+				3D23D95629F23E2400486D1B /* Project */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -173,38 +171,29 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		3D23D95629F23E2400486D1B /* Projects */ = {
+		3D23D95629F23E2400486D1B /* Project */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Projects;
+			path = Project;
 			sourceTree = "<group>";
 		};
-		3D23D95729F23E4600486D1B /* Milestones */ = {
+		3D23D95729F23E4600486D1B /* Milestone */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Milestones;
+			path = Milestone;
 			sourceTree = "<group>";
 		};
 		3D23D95829F23E5200486D1B /* Task */ = {
 			isa = PBXGroup;
 			children = (
 				3DD75B7C2A09F92A00977DA6 /* Components */,
-				3D23D95929F23EB400486D1B /* SubTask */,
 				3DD75B782A09F75B00977DA6 /* TaskModel.swift */,
 				3DD75B762A09EF4500977DA6 /* TaskView.swift */,
 				3DD75B7F2A09FB5E00977DA6 /* TaskViewModel.swift */,
 			);
 			path = Task;
-			sourceTree = "<group>";
-		};
-		3D23D95929F23EB400486D1B /* SubTask */ = {
-			isa = PBXGroup;
-			children = (
-				3DD75B7A2A09F88200977DA6 /* SubTaskModel.swift */,
-			);
-			path = SubTask;
 			sourceTree = "<group>";
 		};
 		3D23D95A29F495BF00486D1B /* Main */ = {
@@ -371,7 +360,6 @@
 				3D23D96129F4992300486D1B /* AddButtonView.swift in Sources */,
 				3DD75B792A09F75B00977DA6 /* TaskModel.swift in Sources */,
 				3D23D92F29F0FA2900486D1B /* DoIt_iOS.xcdatamodeld in Sources */,
-				3DD75B7B2A09F88200977DA6 /* SubTaskModel.swift in Sources */,
 				3DD75B7E2A09F9A600977DA6 /* CheckMark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

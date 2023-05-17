@@ -11,5 +11,5 @@ struct TaskModel: Identifiable {
     let id = UUID()
     var done: Bool = false
     var description: String
-    var subTast: SubTaskModel?
+    var subTask: [TaskModel]?
 }

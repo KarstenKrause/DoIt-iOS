@@ -12,20 +12,23 @@ struct TaskView: View {
     @State private var showingSheet: Bool = false
     
     var body: some View {
+        
         HStack {
             CheckMark(done: taskVM.task.done)
             Text(taskVM.task.description)
+                .frame( maxWidth: .infinity, alignment:.leading)
                 .onTapGesture {
                     showingSheet.toggle()
                 }
                 .sheet(isPresented: $showingSheet) {
-                    Text("test sheet")
+                    SheetView()
                         .presentationDetents([.medium, .large])
                         .presentationDragIndicator(.visible)
                 }
                 
-            
+            Spacer()
         }
+        
     }
 }
 

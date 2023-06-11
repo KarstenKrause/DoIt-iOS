@@ -9,14 +9,14 @@ import SwiftUI
 
 struct TaskListView: View {
     
-    private var tasks: [TaskModel] = [
-        TaskModel(description: "Haushalt"),
-        TaskModel(description: "Fahrrad putzen"),
-        TaskModel(description: "Gitarre spielen")
+    private var sampleTasks: [TaskModel] = [
+        TaskModel(title: "Haushalt"),
+        TaskModel(title: "Fahrrad putzen"),
+        TaskModel(title: "Gitarre spielen")
     ]
     var body: some View {
         List {
-            ForEach(tasks) { task in
+            ForEach(sampleTasks) { task in
                 TaskView(taskVM: TaskViewModel(task: task))
             }
         }
@@ -26,6 +26,6 @@ struct TaskListView: View {
 
 struct TaskListView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskListView()
+       TaskListView()
     }
 }

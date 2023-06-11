@@ -20,12 +20,15 @@ struct AddButtonView: View {
                     .font(.system(size: 55))
             }
         }
-        
+        .sheet(isPresented: $showAddView) {
+            CreateTaskView()
+                .presentationDetents([.fraction(0.45)])
+        }
     }
 }
 
 struct AddButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        AddButtonView(showAddView: .constant(false))
+        MainView()
     }
 }

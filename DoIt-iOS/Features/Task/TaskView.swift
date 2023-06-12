@@ -18,6 +18,7 @@ struct TaskView: View {
             Text(taskVM.task.title)
                 .frame( maxWidth: .infinity, alignment:.leading)
                 .background(Color("PrimaryBackground"))
+        
                 .onTapGesture {
                     showEditView.toggle()
                 }

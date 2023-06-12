@@ -50,10 +50,7 @@ struct CreateTaskView: View {
                             Image(systemName: "flag")
                                 .font(.system(size: 23))
                         }
-
-
-                        
-                                
+        
                     }
                     .padding(.top, 20)
                 }

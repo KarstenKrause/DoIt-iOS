@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TaskModel: Identifiable {
+struct TaskModel: Identifiable, Hashable {
     let id = UUID()
     let creationDate = Date()
     var done: Bool = false

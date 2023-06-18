@@ -12,15 +12,14 @@ struct CreateTaskView: View {
     @State private var description = ""
     @State private var showDatePicker = false
     
-    
     var body: some View {
         ScrollView {
             VStack {
                 Group {
                     TextField("Title", text: $title)
                         .font(.system(size: 25))
-
-                    TextField("Description", text: $description, axis: .vertical)
+                    
+                    TextField("Description", text: $description)
                     
                     HStack {
                         Button {
@@ -28,10 +27,14 @@ struct CreateTaskView: View {
                         } label: {
                             Image(systemName: "calendar")
                                 .font(.system(size: 23))
+                            Text("No Date")
+                                .font(.system(size: 14))
                         }
                         .sheet(isPresented: $showDatePicker) {
                             DatePickerView()
+                                .presentationDragIndicator(.visible)
                         }
+                        
                         
                         Spacer()
                         
@@ -40,38 +43,33 @@ struct CreateTaskView: View {
                         } label: {
                             Image(systemName: "alarm")
                                 .font(.system(size: 23))
+                            Text("Reminder")
+                                .font(.system(size: 14))
                         }
                         
                         Spacer()
                         
                         Button {
-                            print("Priotity-Secteded")
+                            print("Priotity Selected")
                         } label: {
                             Image(systemName: "flag")
                                 .font(.system(size: 23))
+                            Text("Priotity")
+                                .font(.system(size: 14))
                         }
-        
                     }
                     .padding(.top, 20)
                 }
                 .padding(.top)
                 
             }
-            
             .padding()
-            Button {
-                print("create")
-            } label: {
-                VStack {
-                    Text("Create Task")
-                        .foregroundColor(.white)
-                }
-                .frame(maxWidth: .infinity)
-                .frame(height: 35)
-                .background(Color(.blue))
-                .cornerRadius(25)
-                .padding()
-                
+            
+            PrimaryButton("Create", active: Binding(
+                get: { !title.isEmpty },
+                set: { _ in }
+            )) {
+                print("Create-Task-Button clicked")
             }
         }
     }

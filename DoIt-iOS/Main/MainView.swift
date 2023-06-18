@@ -10,12 +10,12 @@ import SwiftUI
 struct MainView: View {
     @State private var showAddView = false
     var body: some View {
-        NavigationView {
+        
             ZStack {
                 TaskListView()
                 AddButtonView(showAddView: $showAddView)
             }
-        }
+        
         
     }
 }

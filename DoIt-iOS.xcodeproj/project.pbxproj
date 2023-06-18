@@ -21,6 +21,7 @@
 		3D6F0E8F2A3529A200F0A31B /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F0E8E2A3529A200F0A31B /* CreateTaskView.swift */; };
 		3D6F0E912A36728E00F0A31B /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F0E902A36728E00F0A31B /* DatePickerView.swift */; };
 		3D6F0E962A367DBF00F0A31B /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F0E952A367DBF00F0A31B /* Priority.swift */; };
+		3D6F0E982A3BADA900F0A31B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F0E972A3BADA900F0A31B /* PrimaryButton.swift */; };
 		3DD75B772A09EF4500977DA6 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B762A09EF4500977DA6 /* TaskView.swift */; };
 		3DD75B792A09F75B00977DA6 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B782A09F75B00977DA6 /* TaskModel.swift */; };
 		3DD75B7E2A09F9A600977DA6 /* CheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B7D2A09F9A600977DA6 /* CheckMark.swift */; };
@@ -67,6 +68,7 @@
 		3D6F0E8E2A3529A200F0A31B /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 		3D6F0E902A36728E00F0A31B /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		3D6F0E952A367DBF00F0A31B /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		3D6F0E972A3BADA900F0A31B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		3DD75B762A09EF4500977DA6 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3DD75B782A09F75B00977DA6 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		3DD75B7D2A09F9A600977DA6 /* CheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMark.swift; sourceTree = "<group>"; };
@@ -170,7 +172,7 @@
 			children = (
 				3D23D95829F23E5200486D1B /* Task */,
 				3D23D95729F23E4600486D1B /* Milestone */,
-				3D23D95629F23E2400486D1B /* Project */,
+				3D23D95629F23E2400486D1B /* Goal */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -182,11 +184,11 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		3D23D95629F23E2400486D1B /* Project */ = {
+		3D23D95629F23E2400486D1B /* Goal */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Project;
+			path = Goal;
 			sourceTree = "<group>";
 		};
 		3D23D95729F23E4600486D1B /* Milestone */ = {
@@ -256,6 +258,7 @@
 				3D23D96029F4992300486D1B /* AddButtonView.swift */,
 				3DD75B7D2A09F9A600977DA6 /* CheckMark.swift */,
 				3D6F0E902A36728E00F0A31B /* DatePickerView.swift */,
+				3D6F0E972A3BADA900F0A31B /* PrimaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				3D23D96129F4992300486D1B /* AddButtonView.swift in Sources */,
 				3DD75B792A09F75B00977DA6 /* TaskModel.swift in Sources */,
 				3D23D92F29F0FA2900486D1B /* DoIt_iOS.xcdatamodeld in Sources */,
+				3D6F0E982A3BADA900F0A31B /* PrimaryButton.swift in Sources */,
 				3DD75B7E2A09F9A600977DA6 /* CheckMark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

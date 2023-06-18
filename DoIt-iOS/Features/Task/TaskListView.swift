@@ -12,14 +12,14 @@ struct TaskListView: View {
     @State private var sampleTasks: [TaskModel] = [
         TaskModel(title: "Haushalt"),
         TaskModel(title: "Fahrrad putzen"),
-        TaskModel(title: "Gitarre spielen")
+        TaskModel(title: "Gitarre spielen"),
     ]
+    
     var body: some View {
         List {
             ForEach(sampleTasks, id: \.self) { task in
                 TaskView(taskVM: TaskViewModel(task: task))
             }
-            
             .onDelete(perform: delete)
         }
 

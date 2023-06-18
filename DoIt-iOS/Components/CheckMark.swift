@@ -7,13 +7,14 @@
 
 import SwiftUI
 
+
 struct CheckMark: View {
     @State var done: Bool
     
     var body: some View {
         Button(action: {self.done.toggle()}) {
-            Image(systemName: done ? "checkmark.circle" : "circle").font(.system(size:25))
-                .foregroundColor(.primary)
+            Image(systemName: done ? "checkmark.circle.fill" : "circle").font(.system(size:25))
+                
         }
     }
 }

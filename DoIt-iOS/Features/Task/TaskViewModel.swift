@@ -8,9 +8,11 @@
 import Foundation
 
 class TaskViewModel: ObservableObject {
-    @Published var task: TaskModel
+    @Published var title: String
+    @Published var done: Bool
     
-    init(task: TaskModel) {
-        self.task = task
+    init(title: String, done: Bool) {
+        self.title = title
+        self.done = done
     }
 }

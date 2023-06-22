@@ -8,12 +8,12 @@
 import Foundation
 
 struct TaskModel: Identifiable, Hashable {
-    let id = UUID()
+    let id: UUID
     let creationDate = Date()
     var done: Bool = false
     var title: String
     var description: String?
     var dueDate: Date?
-    var prority: Priority?
+    var priority: Priority?
     var subTask: [TaskModel]?
 }

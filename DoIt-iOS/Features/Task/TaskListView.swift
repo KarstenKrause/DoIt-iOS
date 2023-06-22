@@ -6,31 +6,34 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct TaskListView: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.creationDate, order: SortOrder.reverse)]) var tasks: FetchedResults<Task>
     
-    @State private var sampleTasks: [TaskModel] = [
-        TaskModel(title: "Haushalt"),
-        TaskModel(title: "Fahrrad putzen"),
-        TaskModel(title: "Gitarre spielen"),
-    ]
     
     var body: some View {
         List {
-            ForEach(sampleTasks, id: \.self) { task in
-                TaskView(taskVM: TaskViewModel(task: task))
+            ForEach(tasks, id: \.self) { task in
+                TaskView(taskVM: TaskViewModel(title: task.title ?? "", done: task.done))
             }
             .onDelete(perform: delete)
         }
-
     }
     
     func delete(at offsets: IndexSet) {
-        sampleTasks.remove(atOffsets: offsets)
+        for offset in offsets {
+            let task = tasks[offset]
+            moc.delete(task)
+        }
+        try? moc.save()
     }
+    
 }
 
 struct TaskListView_Previews: PreviewProvider {
+
     static var previews: some View {
        TaskListView()
     }

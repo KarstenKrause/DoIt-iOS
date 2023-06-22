@@ -14,19 +14,19 @@ struct TaskView: View {
     var body: some View {
         
         HStack {
-            CheckMark(done: taskVM.task.done)
-            Text(taskVM.task.title)
+            CheckMark(done: taskVM.done)
+            Text(taskVM.title)
                 .frame( maxWidth: .infinity, alignment:.leading)
                 .background(Color("PrimaryBackground"))
         
                 .onTapGesture {
                     showEditView.toggle()
                 }
-                .sheet(isPresented: $showEditView) {
-                    EditTaskView(task: taskVM.task)
-                        .presentationDetents([.medium, .large])
-                        .presentationDragIndicator(.visible)
-                }
+//                .sheet(isPresented: $showEditView) {
+//                    EditTaskView(task: taskVM.task)
+//                        .presentationDetents([.medium, .large])
+//                        .presentationDragIndicator(.visible)
+//                }
                 
             Spacer()
         }
@@ -34,11 +34,11 @@ struct TaskView: View {
     }
 }
 
-struct TaskView_Previews: PreviewProvider {
-    static let testTask = TaskModel(title: "Something important to do")
-    static let previewTaskVM = TaskViewModel(task: testTask)
-    
-    static var previews: some View {
-        TaskView(taskVM: previewTaskVM)
-    }
-}
+//struct TaskView_Previews: PreviewProvider {
+//    static let testTask = TaskModel(title: "Something important to do")
+//    static let previewTaskVM = TaskViewModel(task: testTask)
+//
+//    static var previews: some View {
+//        TaskView(taskVM: previewTaskVM)
+//    }
+//}

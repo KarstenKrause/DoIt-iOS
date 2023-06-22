@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CreateTaskView: View {
+    @Environment(\.managedObjectContext) var moc
     @State private var title = ""
     @State private var description = ""
     @State private var showDatePicker = false
@@ -69,7 +70,13 @@ struct CreateTaskView: View {
                 get: { !title.isEmpty },
                 set: { _ in }
             )) {
-                print("Create-Task-Button clicked")
+                let newTask = Task(context: moc)
+                newTask.id = UUID()
+                newTask.title = title
+                newTask.done = false
+                newTask.creationDate = Date.now
+                
+                try? moc.save()
             }
         }
     }

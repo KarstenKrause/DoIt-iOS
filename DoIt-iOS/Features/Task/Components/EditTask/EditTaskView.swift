@@ -24,9 +24,9 @@ struct EditTaskView: View {
     }
 }
 
-struct EditTaskView_Previews: PreviewProvider {
-    static let testTask = TaskModel(title: "Something important to do")
-    static var previews: some View {
-        EditTaskView(task: testTask)
-    }
-}
+//struct EditTaskView_Previews: PreviewProvider {
+//    static let testTask = TaskModel(title: "Something important to do")
+//    static var previews: some View {
+//        EditTaskView(task: testTask)
+//    }
+//}

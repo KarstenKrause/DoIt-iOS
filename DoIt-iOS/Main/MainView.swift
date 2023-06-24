@@ -9,11 +9,12 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showAddView = false
+    @StateObject var tasksVM = TasksViewModel()
     var body: some View {
         
             ZStack {
-                TaskListView()
-                AddButtonView(showAddView: $showAddView)
+                TaskListView(tasksVM: tasksVM)
+                AddButtonView(showAddView: $showAddView, tasksVM: tasksVM)
             }
         
         

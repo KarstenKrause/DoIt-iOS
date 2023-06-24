@@ -23,9 +23,8 @@
 		3D6F0E962A367DBF00F0A31B /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F0E952A367DBF00F0A31B /* Priority.swift */; };
 		3D6F0E982A3BADA900F0A31B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F0E972A3BADA900F0A31B /* PrimaryButton.swift */; };
 		3DD75B772A09EF4500977DA6 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B762A09EF4500977DA6 /* TaskView.swift */; };
-		3DD75B792A09F75B00977DA6 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B782A09F75B00977DA6 /* TaskModel.swift */; };
 		3DD75B7E2A09F9A600977DA6 /* CheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B7D2A09F9A600977DA6 /* CheckMark.swift */; };
-		3DD75B802A09FB5E00977DA6 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B7F2A09FB5E00977DA6 /* TaskViewModel.swift */; };
+		3DD75B802A09FB5E00977DA6 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B7F2A09FB5E00977DA6 /* TasksViewModel.swift */; };
 		3DD75B852A15E7D200977DA6 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B842A15E7D200977DA6 /* EditTaskView.swift */; };
 		3DD75B872A1AC13000977DA6 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD75B862A1AC13000977DA6 /* TaskListView.swift */; };
 /* End PBXBuildFile section */
@@ -70,9 +69,8 @@
 		3D6F0E952A367DBF00F0A31B /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		3D6F0E972A3BADA900F0A31B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		3DD75B762A09EF4500977DA6 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		3DD75B782A09F75B00977DA6 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		3DD75B7D2A09F9A600977DA6 /* CheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMark.swift; sourceTree = "<group>"; };
-		3DD75B7F2A09FB5E00977DA6 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		3DD75B7F2A09FB5E00977DA6 /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		3DD75B842A15E7D200977DA6 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 		3DD75B862A1AC13000977DA6 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,7 +202,7 @@
 				3D6F0E942A367D8B00F0A31B /* Models */,
 				3DD75B7C2A09F92A00977DA6 /* Components */,
 				3DD75B762A09EF4500977DA6 /* TaskView.swift */,
-				3DD75B7F2A09FB5E00977DA6 /* TaskViewModel.swift */,
+				3DD75B7F2A09FB5E00977DA6 /* TasksViewModel.swift */,
 				3DD75B862A1AC13000977DA6 /* TaskListView.swift */,
 			);
 			path = Task;
@@ -237,7 +235,6 @@
 		3D6F0E942A367D8B00F0A31B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3DD75B782A09F75B00977DA6 /* TaskModel.swift */,
 				3D6F0E952A367DBF00F0A31B /* Priority.swift */,
 			);
 			path = Models;
@@ -394,7 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD75B872A1AC13000977DA6 /* TaskListView.swift in Sources */,
-				3DD75B802A09FB5E00977DA6 /* TaskViewModel.swift in Sources */,
+				3DD75B802A09FB5E00977DA6 /* TasksViewModel.swift in Sources */,
 				3DD75B772A09EF4500977DA6 /* TaskView.swift in Sources */,
 				3D6F0E912A36728E00F0A31B /* DatePickerView.swift in Sources */,
 				3D23D92529F0FA2900486D1B /* ContentView.swift in Sources */,
@@ -405,7 +402,6 @@
 				3D6F0E8F2A3529A200F0A31B /* CreateTaskView.swift in Sources */,
 				3D23D95E29F495FC00486D1B /* MainView.swift in Sources */,
 				3D23D96129F4992300486D1B /* AddButtonView.swift in Sources */,
-				3DD75B792A09F75B00977DA6 /* TaskModel.swift in Sources */,
 				3D23D92F29F0FA2900486D1B /* DoIt.xcdatamodeld in Sources */,
 				3D6F0E982A3BADA900F0A31B /* PrimaryButton.swift in Sources */,
 				3DD75B7E2A09F9A600977DA6 /* CheckMark.swift in Sources */,

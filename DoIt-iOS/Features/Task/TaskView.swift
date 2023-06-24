@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct TaskView: View {
-    @StateObject var taskVM: TaskViewModel
+    var title: String
+    var done: Bool
     @State private var showEditView: Bool = false
     
     var body: some View {
         
         HStack {
-            CheckMark(done: taskVM.done)
-            Text(taskVM.title)
+            CheckMark(done: done)
+            Text(title)
                 .frame( maxWidth: .infinity, alignment:.leading)
                 .background(Color("PrimaryBackground"))
         

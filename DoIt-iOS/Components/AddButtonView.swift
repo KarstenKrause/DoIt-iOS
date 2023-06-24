@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddButtonView: View {
     @Binding var showAddView: Bool
+    @ObservedObject var tasksVM: TasksViewModel
     
     var body: some View {
         VStack {
@@ -21,7 +22,7 @@ struct AddButtonView: View {
             }
         }
         .sheet(isPresented: $showAddView) {
-            CreateTaskView()
+            CreateTaskView(tasksVM: tasksVM)
                 .presentationDetents([.fraction(0.45)])
         }
     }

@@ -31,7 +31,7 @@ struct PrimaryButton: View {
             .frame(height: 35)
             .background(self.active ? Color(.blue) : Color(.blue).opacity(0.4))
             .cornerRadius(25)
-            .padding()
+
             
         }
         .disabled(!self.active)

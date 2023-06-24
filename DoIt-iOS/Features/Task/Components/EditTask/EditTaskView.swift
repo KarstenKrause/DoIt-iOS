@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct EditTaskView: View {
-    let task: TaskModel
+    //let task: TaskModel
     @State private var title: String
     
-    init(task: TaskModel) {
-            self.task = task
-            self._title = State(initialValue: task.title)
-        }
+    //init(task: TaskModel) {
+            //self.task = task
+            //self._title = State(initialValue: task.title)
+        //}
     
     var body: some View {
         VStack {

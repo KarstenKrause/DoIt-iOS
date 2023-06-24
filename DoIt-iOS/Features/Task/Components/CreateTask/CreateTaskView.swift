@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CreateTaskView: View {
-    @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
+    @ObservedObject var tasksVM: TasksViewModel
     @State private var title = ""
     @State private var description = ""
     @State private var showDatePicker = false
@@ -16,6 +17,7 @@ struct CreateTaskView: View {
     var body: some View {
         ScrollView {
             VStack {
+
                 Group {
                     TextField("Title", text: $title)
                         .font(.system(size: 25))
@@ -60,30 +62,38 @@ struct CreateTaskView: View {
                         }
                     }
                     .padding(.top, 20)
+                    Spacer()
                 }
                 .padding(.top)
+                
+                
+                
+                PrimaryButton("Create", active: Binding(
+                    get: { !title.isEmpty },
+                    set: { _ in }
+                )) {
+                    
+                    tasksVM.addTask(title: title)
+                    
+                    title = ""
+                    description = ""
+                    dismiss()
+                    
+                }
                 
             }
             .padding()
             
-            PrimaryButton("Create", active: Binding(
-                get: { !title.isEmpty },
-                set: { _ in }
-            )) {
-                let newTask = Task(context: moc)
-                newTask.id = UUID()
-                newTask.title = title
-                newTask.done = false
-                newTask.creationDate = Date.now
-                
-                try? moc.save()
-            }
+            
+            
+            
+            
         }
     }
 }
 
-struct CreateTaskView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateTaskView()
-    }
-}
+//struct CreateTaskView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CreateTaskView()
+//    }
+//}
